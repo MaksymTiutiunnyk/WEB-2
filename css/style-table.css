@@ -1,0 +1,151 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	font-size: 3vmin;
+}
+
+td {
+	width: 20%;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+.header tr,
+.footer tr {
+	background-color: lightblue;
+	font-size: 4vmin;
+}
+
+.first {
+	text-align: right;
+	padding: 0 25px;
+}
+
+.x {
+	padding: 3% 0;
+}
+
+.x h1 {
+	max-width: 50%;
+	min-width: 150px;
+	padding: 5px;
+	margin: 0 20px;
+	background-color: white;
+	border: 1px solid black;
+	float: left;
+}
+
+.main tr {
+	text-align: center;
+}
+
+.second {
+	background-color: peachpuff;
+	border-right: 1px solid black;
+	text-align: left;
+	padding: 0 4%;
+}
+
+.list li:before {
+	content: "->";
+	color: red;
+}
+
+.third {
+	background-color: lightgreen;
+	width: 60vh;
+}
+
+.fourth {
+	background-color: peachpuff;
+	border-left: 1px solid black;
+	padding: 0 3%;
+}
+
+.fifth {
+	width: 60vh;
+}
+
+.sixth {
+	background-color: lightgreen;
+	border-left: 1px solid black;
+}
+
+.image {
+	display: block-inline;
+	max-width: 100%;
+	max-height: 300px;
+}
+
+.values_list {
+	list-style-position: inside;
+	text-align: left;
+	font-size: 2.5vmin;
+}
+
+.seventh {
+	padding: 0 20px;
+}
+
+.y {
+	padding: 3% 0;
+	text-align: center;
+}
+
+.y h3 {
+	max-width: 50%;
+	min-width: 150px;
+	float: right;
+	padding: 5px;
+	margin: 0 20px;
+	background-color: white;
+	border: 1px solid black;	
+}
+
+.main tr:nth-child(2) {
+	border-bottom: none;
+} 
+
+.main tr:nth-child(3) {
+	border-top: none;
+}
