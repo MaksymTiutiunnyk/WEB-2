@@ -35,15 +35,23 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-.table {
-	width: 100%;
-	height: 100%;
-	border-collapse: collapse;
+body {
+	word-wrap: break-word;
+	font-size: 4vmin;
+}
+
+.header, .footer {
+	min-height: 20%;
+}
+
+.body {
+	height: 60%;
 	font-size: 3vmin;
 }
 
-td {
-	width: 20%;
+table {
+	width: 100%;
+	border-collapse: collapse;
 }
 
 tr {
@@ -53,12 +61,12 @@ tr {
 .header tr,
 .footer tr {
 	background-color: lightblue;
-	font-size: 4vmin;
 }
 
 .first {
 	text-align: right;
 	padding: 0 25px;
+	width: 50%;
 }
 
 .x {
@@ -66,16 +74,15 @@ tr {
 }
 
 .x h1 {
-	max-width: 50%;
 	min-width: 150px;
 	padding: 5px;
-	margin: 0 20px;
+	margin-left: 25px;
 	background-color: white;
 	border: 1px solid black;
 	float: left;
 }
 
-.main tr {
+.body tr {
 	text-align: center;
 }
 
@@ -84,6 +91,7 @@ tr {
 	border-right: 1px solid black;
 	text-align: left;
 	padding: 0 4%;
+	width: 20%;
 }
 
 .list li:before {
@@ -91,24 +99,22 @@ tr {
 	color: red;
 }
 
-.third {
-	background-color: lightgreen;
-	width: 60vh;
+.third_fifth {
+	width: 60%;
+	vertical-align: top;
 }
 
-.fourth {
-	background-color: peachpuff;
-	border-left: 1px solid black;
-	padding: 0 3%;
+.third_fifth_table {
+	height: 100%;
+}
+
+.third {
+	background-color: lightgreen;
 }
 
 .fifth {
-	width: 60vh;
-}
-
-.sixth {
-	background-color: lightgreen;
-	border-left: 1px solid black;
+	height: 100%;
+	border: none;
 }
 
 .image {
@@ -117,14 +123,35 @@ tr {
 	max-height: 300px;
 }
 
+.fourth_sixth {
+  width: 20%;
+}
+
+.fourth_sixth_table {
+  height: 100%;
+}
+
+.fourth {
+  background-color: peachpuff;
+  border-left: 1px solid black;
+  padding: 0 1%;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.sixth {
+  background-color: lightgreen;
+  border-left: 1px solid black;
+}
+
 .values_list {
 	list-style-position: inside;
 	text-align: left;
-	font-size: 2.5vmin;
 }
 
 .seventh {
-	padding: 0 20px;
+	padding: 0 25px;
+	width: 50%;
 }
 
 .y {
@@ -133,19 +160,22 @@ tr {
 }
 
 .y h3 {
-	max-width: 50%;
-	min-width: 150px;
 	float: right;
-	padding: 5px;
-	margin: 0 20px;
+	padding: 0 15px;
+	margin-right: 40px;
 	background-color: white;
-	border: 1px solid black;	
+	border: 1px solid black;
 }
 
-.main tr:nth-child(2) {
-	border-bottom: none;
+.footer tr {
+	border-top: none;
+}
+
+.body tr:nth-child(2) {
+	border: none;
 } 
 
-.main tr:nth-child(3) {
-	border-top: none;
+.body tr:nth-child(1) {
+	border: none;
+	border-bottom: 1px solid black;
 }
